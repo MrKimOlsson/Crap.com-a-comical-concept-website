@@ -1,0 +1,312 @@
+@import "mixins";
+@import "colors";
+
+$height-one: 100%;
+$height-two: 100%;
+$height-three: 100%;
+$height-four: 100%;
+$height-five: 100%;
+
+$width: 100%;
+$height: 100%;
+
+$border-top: solid 1px #000000c8;
+$border-bottom: solid 1px #ffffff0c;
+
+$padding-bottom: 1rem;
+
+// FADE IN
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+// SECTIONS
+.sections {
+    @include grid(1); 
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    
+    .addOne {
+        @include grid(1);
+        width: 100%;
+        background-image: url("/img/backgrounds/1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        
+
+        div {
+
+            h3 {
+                color: white;
+                font-size: 4rem;
+            }
+    
+            h4 {
+                font-size: 2rem;
+            }
+    
+            @include tablet {
+                h3 {
+                    color: white;
+                    font-size: 5rem;
+                }
+    
+                h4 {
+                    font-size: 2.2rem;
+                }
+            }
+    
+            @include desktop {
+                padding-right: 5rem;
+                h3 {
+                    color: white;
+                    font-size: 5.8rem;
+                }
+    
+                h4 {
+                    font-size: 2.5rem;
+                }
+            }
+
+        }
+
+        
+        
+    }
+    
+    .section-one{
+        @include flex(column, center, center);
+        background-color: $bg-color-one;        
+        width:$width;
+        height:$height-one;
+        border-bottom: $border-bottom;
+        border-top: $border-top; 
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            padding-top: .8rem;
+        }
+        p {
+            padding-top: 2rem;
+            font-size: 1.2rem;
+
+        }
+
+        @include fold{
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                padding-top: .6rem;
+                font-size: 1.8rem;
+            }
+
+        }
+
+        @include special{            
+            h1 {
+                font-size: 2.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @include xiomi {
+                
+            h1 {
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @include tablet{
+    
+            h1 {
+                padding-top: 0rem;
+                font-size: 3.2rem;
+            }
+
+            h2 {
+                font-size: 2.4rem;
+            }
+            
+            p {
+                padding-top: 1.6rem;
+                font-size: 1.4rem;
+            }
+        }
+
+        @include desktop{
+            h1 {
+                padding-top: 0rem;
+                font-size: 5rem;
+            }
+
+            h2 {
+                font-size: 2.4rem;
+            }
+            p {
+                padding-top: 2rem;
+                font-size: 1.4rem;
+            }
+        }
+
+        .content {
+            @include grid(1);
+            padding-top: 4rem;
+            padding-bottom: 11rem;
+            width: 85%;
+
+            @include fold{
+                margin-top: -10rem;
+                width: 95%;
+            }
+
+            @include tablet{
+                @include grid(2);
+                width: 90%;
+                padding-top: 5rem;
+                padding-left: 5rem;
+
+                h1 {
+                    font-size: 5rem;
+
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            @include desktop{
+                @include grid(2);
+                width: 80%;
+                padding-top: 9rem;
+                padding-left: 10rem;
+
+                h1 {
+                    font-size: 7rem;
+
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .history {
+            @include grid(1);
+            padding-bottom: 11rem;
+            width: 85%;
+            color: white;
+
+            @include tablet {
+                text-align: center;
+                padding-top: 5rem;
+            }
+
+            @include desktop {
+                text-align: center;
+                padding-top: 6rem;
+            }
+        }
+
+        .refereces {
+            h1 {
+                font-size: 3.2rem;
+    
+            }
+
+            h2 {
+                font-size: 2rem;
+            }            
+        }
+   
+    }
+
+    .section-two{
+        @include flex(column, center, center);
+        background-color: $bg-color-two;      
+        color: $text-section-two;
+        width:$width;
+        height:$height-two;
+        border-top: $border-top;
+        border-bottom: $border-bottom; 
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        a {
+            font-size: .8rem;
+        }
+    }
+
+    .section-three{
+        @include flex(column, center, center);
+        background-color: $bg-color-three;
+        width:$width;
+        height:$height-three;
+        border-top: $border-top;
+        border-bottom: $border-bottom; 
+
+        .content {
+            @include grid(1);
+        }
+    }
+
+    .section-four{
+        @include flex(column, center, center);
+        background-color: $bg-color-four;
+        width:$width;
+        height:$height-four;
+        border-top: $border-top;
+        border-bottom: $border-bottom;
+    }
+
+    .section-five{
+        @include flex(column, center, center);
+        background-color: $bg-color-five;
+        width:$width;
+        height:$height-five;
+        border-top: $border-top;
+        border-bottom: $border-bottom;
+    } 
+
+    .moveAddress {
+        @include position(-2rem, none, none);
+    }
+}

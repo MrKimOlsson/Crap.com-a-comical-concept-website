@@ -1,0 +1,102 @@
+.wrapper {
+    height: 100%;
+    width: 95%;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .validation-form {
+    width: 85%;
+    background-color: $card-color;
+    padding: 2rem 2.5rem 1rem 1.5rem;
+    border-radius: .5rem;
+    border: 1px solid #d8d8d8;
+
+    @include fold {
+      width: 90%;
+    }
+
+    @include tablet {
+      width: 75%;
+    }
+
+    @include desktop {
+      width: 60%;
+    }
+  }
+
+  .headline {
+    text-align: center;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 1rem;
+  }
+
+  .form-content {
+    padding-top: 1rem;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .input-label {
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #d8d8d8;
+  }
+
+  .form-message {
+    width: 100%;
+  }
+
+  .btn {
+    padding: .8em 1.4em;
+    border-radius: .5rem;
+    border: 0;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn-block {
+    width: 100%;
+  }
+
+  .btn-primary {
+    background-color: $primary-purple;
+    color: #ffffff;
+    transition: background 70ms;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: $secondary-purple;
+  }
+
+  .btn-primary:active {
+    background-color: #190047;
+  }
+
+  .validation-feedback {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  #errorMessage {
+    color: red;
+    outline: 1px solid #be1b1b; 
+  }
+  
+  .d-none {
+    display: none;
+  }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fictional company website - Crap. Contact page. Contact information as well as a contact form to fill in.">
+    <!-- Css -->
+    <link rel="stylesheet" href="/styles/main.css">
+        <!-- Fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Merriweather&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/d15c832780.js" crossorigin="anonymous"></script>
+    <title>Crap - Contact us</title>
+</head>
+<body>
+
+      <!-- HEADER -->
+      <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <a href="/index.html" class="active"><img class="logo-img" src="/img/crap-logo-small.png" alt="logo image"></a>
+            <menu class="menu-desktop">
+                <li><a href="/index.html">Home</a></li>
+                <li><a class="hightlight" href="/about.html">About</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/references.html">References</a></li>
+                <li class="highlighted"><a href="/contact.html">Contact</a></li>
+            </menu>
+            <!-- Hidden menu -->
+            <menu class="menuMobile">
+                <li><a class="menuItem" href="/index.html">Home</a></li>
+                <li><a class="menuItem" href="/about.html">About</a></li>
+                <li><a class="menuItem" href="/products.html">Products</a></li>
+                <li><a class="menuItem" href="/references.html">References</a></li>
+                <li><a class="menuItem" href="/contact.html">Contact</a></li>
+            </menu>
+            <!-- Hamburger -->
+            <!-- <div class="icon" onclick=""> -->
+                <div class="hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            <!-- </div> -->
+        </nav>
+       </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <section class="sections">
+          <section class="section-one" id="section-one">
+            <div class="fade-in content">
+                    
+                <div>
+                    <h1>Contact</h1>
+                    <h2>Do you have some crap on your mind?
+                    </h2>
+                    <p>If you feel that the crap you ordered is compleat crap and you would like to thank us for it Feel free fill in your crap below. But please note that we don´t take any crap, we just sell it.</p>              
+                </div>      
+                
+                <div>
+                  <picture>
+                    <img class="img-ads" src="img/building.jpg" alt="Bild på kreativ skapelse">
+                  </picture>
+                  <p>Address:</p>
+                  <address class="moveAddress">
+                    3606 Exposition Blvd<br>
+                    Los Angeles<br>
+                    California<br>
+                    United States
+                  </address>
+                  <a class="call-link" href="tel:5554280940">Call us at 555-428-0940</a>
+                </div>
+
+            </div>
+
+          </section>
+
+            <section class="section-two fade-in" id="section-two">
+                <div class="section-name"><h3>Contact us below</h3></div>
+                <div class="wrapper">
+
+                    <form id="validationForm" class="validation-form">
+                      <div class="headline">
+                        <h4>Tell us about it</h4>
+                      </div>
+                      <div class="form-content">
+                
+                        <div class="input-group">
+                          <label for="firstName" class="input-label">First Name:</label>
+                          <input type="text" id="firstName" class="form-control">
+                        </div>
+                
+                        <div class="input-group">
+                          <label for="lastName" class="input-label">Last Name:</label>
+                          <input type="text" id="lastName" class="form-control">
+                        </div>
+                
+                        <div class="input-group">
+                          <label for="email" class="input-label">Email:</label>
+                          <input type="email" id="email" class="form-control">
+                        </div>
+                
+                        <div class="input-group">
+                          <label for="message" class="input-label">Message:</label>
+                          <textarea class="form-control" id="message" name="message" rows="10"></textarea>
+                        </div>
+                
+                        <div class="input-group">
+                          <input type="checkbox" id="checkbox-purchase">
+                          <label for="checkbox-purchase">Product purchase</label>
+                        </div>
+
+                        <div class="input-group">
+                          <input type="checkbox" id="checkbox-questions">
+                          <label for="checkbox-questions">Questions about the company</label>
+                        </div>
+
+                        <div class="input-group">
+                          <input type="checkbox" id="checkbox-website">
+                          <label for="checkbox-website">Website related</label>
+                        </div>
+                
+                        <div>
+                          <button class="btn btn-block btn-primary">Submit</button>
+                        </div>
+                
+                      </div>
+                
+                      <div class="validation-feedback">
+                        <!-- vi vill ta bort d-none -->
+                        <p id="errorMessage" class="d-none">Alla fält måste vara korrekt ifyllda!</p>
+                      </div>
+                
+                    </form>
+                  </div>
+
+
+                  <h3>Feel free to visit us</h3>
+              <div class="contact-card-wrapper fade-in"> 
+                  <article class="contact-card">
+                      <picture>
+                          <img class="img-section" src="/img/building.jpg" alt="Bild på kreativ skapelse">
+                      </picture>
+                      <div>
+                          <h4>Adress</h4>
+                          <h5>Crap headquarters</h5>
+                          <address>3606 Exposition Blvd<br>
+                            Los Angeles<br>
+                            California<br>
+                            United States
+                          </address>
+                          <br>
+                          <a href="tel:5554280940">Call us at 555-428-0940</a>          
+                      </div>
+                  </article>
+
+    
+              </div>
+
+            </section>
+
+  
+              
+
+
+            <section class="section-three" id="section-three">
+              <div class="fade-in content">
+                  <picture>
+                      <img class="img-ads" src="img/ads/crap.png" alt="Picure of the word crap, made with lego.">
+                  </picture>
+                  <form>
+                      <button class="btnProducts" formaction="/products.html">Go to Products!</button>
+                  </form>          
+              </div>
+          </section>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>  
+      <a href="/index.html"><img class="logo-img" src="/img/crap-logo-small.png" alt="logo image"></a>
+      <ul class="footer-menu">
+          <li><a href="/contact.html#section-one">Up <i class="fa-solid fa-circle-up"></i></a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/references.html">References</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright"><i>&#169; Crap Ltd. 2022 - This site is fictionary - Nothing is real</i></p>                 
+  </footer>
+    <!-- JavaScript -->
+    <script src="/script/nav.js"></script>
+    <script src="/script/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* ____________________________________Footer____________________________________ */
+
+footer {
+    @include grid(1);
+    @include size(100%, 30vh);
+    // @include position(0px, 0px, none);
+    font-weight: lighter;
+    font-size: 1rem;
+    background-color: $footer-color;
+    color: $medium-text;
+    border-top: solid 1px $footer-border;
+    padding-top: 1rem;
+
+    .btn-backUp {
+        list-style-type: none;
+        padding-bottom: .2rem;
+        color: $footer-links;
+        
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+        list-style-type: none;
+
+        li {
+            padding:0px 10px 0px 10px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: .8rem;
+        color: $copyright-text;
+        padding-top: 1rem;
+    }
+}
